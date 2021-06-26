@@ -1,0 +1,105 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    /* background: url(../img/abs-1850926_1920.jpg) no-repeat top center/cover; */
+    background-color: #8d33f3;
+    color: white;
+}
+
+h1 {
+    font-size: 37px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/* css for form  */
+form {
+    width: 700px;
+    float: right;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid white;
+        padding: 10px;
+        
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+}
+
+/* css for paragraph  */
+.para {
+    font-family: cursive;
+}
+
+/* css for whole inputs in yellow box  */
+.formbox {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* css for the inputs box */
+.box {
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 400px;
+    height: 20px;
+    margin-bottom: 18px;
+}
+
+#dob{
+    border: 4px solid white;
+}
+
+.text {
+    margin-top: 11px;
+}
+
+/* css for button  */
+.btn {
+    width: 70px;
+    height: 30px;
+    margin-top: 20px;
+    color: #8d33f3;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: wheat;
+    color: black;
+    cursor: pointer;
+}
+
+/* css for error messge appear in javascript */
+.wrapper #error_message {
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+
+    transition: all 0.5s ease;
+}
+
+#show{
+    color: black;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- css stylesheet linked -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- form of the web page -->
+    <div class="wrapper">
+        <form action="demo.php" method="POST" class="container" id="myform" onsubmit="return validation()">
+            <h2>Register</h2>
+            <div class="formbox">
+                <label for="name">Name</label>
+                <div>
+                    <input type="text" name="myname" id="name" class="box">
+                </div>
+                <label for="phone">Phone</label>
+                <div>
+                    <input type="phone" name="myphone" id="phone" class="box">
+                </div>
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" name="myemail" id="email" class="box">
+                </div>
+                <label for="address"> Address</label>
+                <div>
+                    <input type="text" name="myaddress" id="address" class="box">
+                </div>
+                <label for="dob">DOB</label>
+                <div>
+                    <input type="date" name="myDOB" id="dob" class="box">
+                </div>
+                <label for="password">Password</label>
+                <div>
+                    <input type="text" name="mypassword" id="password" class="box">
+                </div>
+                <div>
+                    Gender: Male<input type="radio" name="myGender" value="Male" required> 
+                    Female<input type="radio" name="myGender" value="Female">
+                    Other<input type="radio" name="myGender" value="Other">
+                </div>
+                <button type="submit" name="save" class="btn" onclick="Submit()">Submit</button>
+                <button class="btn" type="Reset">Reset </button>
+                <p id="show"></p>
+                <div id="error_message"></div>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        // function for submit button to show that the form is submitted 
+        
+        // function for the validation that the input number is of 10 digits and a correct email 
+        function validation() {
+            var phone = document.getElementById("phone").value;
+            var error_message = document.getElementById("error_message");
+            var text;
+            error_message.style.padding = "15px";
+            if (isNaN(phone) || phone.length != 10) {
+                text = "Please Enter Valid Phone Number";
+                error_message.innerHTML = text;
+                return false;
+            }
+            if (email.indexof("@") == -1 || email.length < 7) {
+                text = "Please Enter Valid Email";
+                error_message.innerHTML = text;
+                return false;
+            }
+        }
+        function Submit(){
+        if(validation){
+
+        }
+        else
+        {
+                document.getElementById("show").innerHTML = "YOUR FORM IS SUBMITTED SUCCESSFULLY!";
+            
+        }
+    }
+    </script>
+</body>
+
+</html>
