@@ -39,14 +39,7 @@
 
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-    
-// Create a conn
-$conn = mysqli_connect($servername, $username, $password);
-    
-mysqli_select_db($conn,'test');
+include 'conf.php';
 
 $query = " select * from trainer";
 
